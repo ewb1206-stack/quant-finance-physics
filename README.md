@@ -39,7 +39,9 @@ pricing.
 **Key features:** call option pricing | drift analysis | profit 
 distribution visualisation | percentile risk metrics
 
----
+![Options Price Paths](price_paths.png)
+![Net Profit Distribution](profit_distribution.png)
+![Final Price Distribution](final_price_distribution.png)
 
 *Results vary between runs by design — stochastic behaviour 
 is the point.*
