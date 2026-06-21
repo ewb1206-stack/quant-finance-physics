@@ -9,7 +9,8 @@ A Python-based simulation engine using Geometric Brownian Motion to model and co
 - Stochastic Simulation: Uses NumPy to generate 1,000 days of market activity based on random walks.
 - Comparative Analysis: Contrasts stable vs. volatile asset profiles by varying standard deviation.
 - Visualisation: Matplotlib implementation featuring statistical mean markers for risk-adjusted return analysis.
-- ![GBM Simulation Output](simulation.png)
+
+![GBM Simulation Output](simulation.png)
 
 ## Notes on Stochastic Behaviour
 
