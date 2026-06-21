@@ -23,20 +23,29 @@ python "Geometric Brownian Motion.py"
 
 ## Project 2: Monte Carlo Options Pricing
 
-This project extends the GBM framework to price European call options using Monte Carlo simulation. By generating 1,000 price paths over 252 trading days, it estimates the fair value of a call option from first principles and analyses how drift affects the option price.
+This project extends the GBM framework to price European call options 
+using Monte Carlo simulation. By generating 1,000 price paths over 252 
+trading days, it estimates the fair value of a call option from first 
+principles and analyses how drift affects the option price.
 
 ### Key Features
 
-- Options Pricing: Estimates call option price by averaging payoffs across 1,000 simulated paths
-- Drift Analysis: Compares option prices under zero drift (μ = 0) and positive drift (μ = 0.0003)
-- Visualisation: Three charts — simulated price paths, net profit distribution, and final price distribution
+- Options Pricing: Estimates call option price by averaging payoffs 
+across 1,000 simulated paths
+- Drift Analysis: Compares option prices under zero drift (μ = 0) 
+and positive drift (μ = 0.0003)
+- Visualisation: Three charts — simulated price paths, net profit 
+distribution, and final price distribution
 
-### Results
+### Core Insight
 
-- No drift: option price £8.39, break-even at £118.39
-- With drift: option price rises to £12.72
-- Core insight: drift shifts the final price distribution rightward, increasing the proportion of paths expiring in-the-money and raising the expected payoff
+Adding drift shifts the final price distribution rightward, increasing 
+the proportion of paths expiring in-the-money and raising the expected 
+payoff. This demonstrates how expected return directly influences 
+option valuation — a fundamental concept in derivatives pricing.
 
 ### Notes on Stochastic Behaviour
 
-Each run produces unique results by design. The drift comparison isolates the effect of expected return on option valuation — a core concept in derivatives pricing.
+Each run produces unique results by design. The drift comparison 
+isolates the effect of expected return on option valuation independent 
+of random variation.
