@@ -1,51 +1,45 @@
-## Stochastic Asset Modelling
+# Quant Finance & Physics Portfolio
 
-Geometric Brownian Motion (GBM) is the mathematical foundation of modern quantitative finance. It models asset prices as a continuous random walk with constant drift and volatility. This project implements GBM from first principles using the stochastic differential equation dS = μS dt + σS dW, where μ is the expected return, σ is volatility, and dW is a Wiener process increment. By simulating 1,000-day price trajectories across different volatility regimes, it demonstrates how standard deviation directly governs the distribution of possible asset outcomes — a core concept in risk modelling and derivative pricing.
+A collection of Python projects applying stochastic modelling 
+and Monte Carlo methods to quantitative finance problems.
 
-A Python-based simulation engine using Geometric Brownian Motion to model and compare asset price trajectories under different volatility regimes.
+---
 
-## Key Features
+## Project 1: Stochastic Asset Modelling
 
-- Stochastic Simulation: Uses NumPy to generate 1,000 days of market activity based on random walks.
-- Comparative Analysis: Contrasts stable vs. volatile asset profiles by varying standard deviation.
-- Visualisation: Matplotlib implementation featuring statistical mean markers for risk-adjusted return analysis.
+Geometric Brownian Motion (GBM) is the mathematical foundation 
+of modern quantitative finance. It models asset prices as a 
+continuous random walk with constant drift and volatility — the 
+same stochastic process that underpins the Black-Scholes framework. 
+
+This project implements GBM from first principles using the SDE 
+dS = μS dt + σS dW, simulating 1,000-day price trajectories across 
+different volatility regimes to demonstrate how standard deviation 
+governs the distribution of possible asset outcomes.
+
+**Key features:** comparative volatility analysis | NumPy random 
+walks | Matplotlib visualisation with statistical mean markers
 
 ![GBM Simulation Output](1000DaySimulation.png)
 
-## Notes on Stochastic Behaviour
-
-Each run produces a unique price trajectory by design. Results vary between executions, illustrating path dependency and why average price alone is an insufficient risk metric.
-
-## Usage
-
-Requires numpy and matplotlib. Run the script directly to generate a comparative plot:
-python "Geometric Brownian Motion.py"
+---
 
 ## Project 2: Monte Carlo Options Pricing
 
-This project extends the GBM framework to price European call options 
-using Monte Carlo simulation. By generating 1,000 price paths over 252 
-trading days, it estimates the fair value of a call option from first 
-principles and analyses how drift affects the option price.
+Extends the GBM framework to price European call options from first 
+principles. Simulates 1,000 price paths over 252 trading days, 
+computing call option value as the mean payoff across all paths.
 
-### Key Features
+Compares pricing under zero drift (μ = 0) vs positive drift 
+(μ = 0.0003), demonstrating how expected return shifts the final 
+price distribution rightward — increasing in-the-money paths and 
+raising the expected payoff. A fundamental concept in derivatives 
+pricing.
 
-- Options Pricing: Estimates call option price by averaging payoffs 
-across 1,000 simulated paths
-- Drift Analysis: Compares option prices under zero drift (μ = 0) 
-and positive drift (μ = 0.0003)
-- Visualisation: Three charts — simulated price paths, net profit 
-distribution, and final price distribution
+**Key features:** call option pricing | drift analysis | profit 
+distribution visualisation | percentile risk metrics
 
-### Core Insight
+---
 
-Adding drift shifts the final price distribution rightward, increasing 
-the proportion of paths expiring in-the-money and raising the expected 
-payoff. This demonstrates how expected return directly influences 
-option valuation — a fundamental concept in derivatives pricing.
-
-### Notes on Stochastic Behaviour
-
-Each run produces unique results by design. The drift comparison 
-isolates the effect of expected return on option valuation independent 
-of random variation.
+*Results vary between runs by design — stochastic behaviour 
+is the point.*
