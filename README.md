@@ -10,7 +10,7 @@ A Python-based simulation engine using Geometric Brownian Motion to model and co
 - Comparative Analysis: Contrasts stable vs. volatile asset profiles by varying standard deviation.
 - Visualisation: Matplotlib implementation featuring statistical mean markers for risk-adjusted return analysis.
 
-![GBM Simulation Output](Simulation.png)
+![GBM Simulation Output](1000 Day Simulation.png)
 
 ## Notes on Stochastic Behaviour
 
