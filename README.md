@@ -45,3 +45,15 @@ distribution visualisation | percentile risk metrics
 
 *Results vary between runs by design — stochastic behaviour 
 is the point.*
+
+## Project 3: Monte Carlo Convergence Analysis
+
+Demonstrates the convergence of Monte Carlo option pricing toward the 
+Black-Scholes analytical solution as the number of simulation paths increases.
+
+Simulates a European call option across path counts from 100 to 10,000, 
+plotting the MC price against the closed-form Black-Scholes price to 
+visualise the law of large numbers in action.
+
+**Key features:** convergence analysis | Black-Scholes verification | 
+law of large numbers | exact GBM simulation
