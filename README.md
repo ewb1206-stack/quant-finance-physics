@@ -46,6 +46,8 @@ distribution visualisation | percentile risk metrics
 *Results vary between runs by design — stochastic behaviour 
 is the point.*
 
+---
+
 ## Project 3: Monte Carlo Convergence Analysis
 
 Demonstrates the convergence of Monte Carlo option pricing toward the 
