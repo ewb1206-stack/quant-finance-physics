@@ -56,4 +56,4 @@ plotting the MC price against the closed-form Black-Scholes price to
 visualise the law of large numbers in action.
 
 **Key features:** convergence analysis | Black-Scholes verification | 
-law of large numbers | exact GBM simulation
+law of large numbers | exact GBM simulation.
