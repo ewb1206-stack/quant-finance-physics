@@ -4,6 +4,9 @@ import matplotlib.pyplot as plt
 days = 252
 paths = 1000
 start_price = 100
+r = 0.05
+T = 1
+
 
 changes = np.random.normal(0, 0.02,(paths,days))
 prices = start_price * np.cumprod(1 +changes, axis=1)
@@ -12,7 +15,7 @@ final_prices = prices[:,-1]
 strike_price = 110
 
 payoffs = np.maximum(final_prices - strike_price,0) # this picks the biggest value either the profit we make or 0 if negative profit
-option_price = np.mean(payoffs)
+option_price = np.mean(payoffs) * np.exp(-r*T)
 net_profit = payoffs - option_price 
 break_even = strike_price + option_price
 
@@ -31,7 +34,7 @@ prices_drift = start_price*np.cumprod(1+changes_drift, axis=1)
 final_drift = prices_drift[:,-1]
 
 payoffs_drift = np.maximum(final_drift - strike_price, 0)
-option_price_drift = np.mean(payoffs_drift)
+option_price_drift = np.mean(payoffs_drift) * np.exp(-r*T)
 net_profit_drift = payoffs_drift - option_price_drift
 break_even_drift = strike_price + option_price_drift
 
