@@ -12,7 +12,7 @@ of modern quantitative finance. It models asset prices as a
 continuous random walk with constant drift and volatility — the 
 same stochastic process that underpins the Black-Scholes framework.
 
-### Geometric Brownian Motion
+### Volatility Regime Comparison
 Implements GBM from first principles using the SDE dS = μS dt + σS dW, 
 simulating 1,000-day price trajectories across different volatility 
 regimes to demonstrate how standard deviation governs the distribution 
@@ -23,7 +23,7 @@ walks | Matplotlib visualisation with statistical mean markers
 
 ![GBM Simulation Output](1000DaySimulation.png)
 
-### gbm_simulation.py
+### Exact GBM with Options Pricing
 Rebuilds GBM using the exact log-normal formula, simulating 10,000 
 price paths over 252 trading days. Prices a European call option 
 via Monte Carlo and verifies against the Black-Scholes analytical 
