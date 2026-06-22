@@ -12,7 +12,7 @@ of modern quantitative finance. It models asset prices as a
 continuous random walk with constant drift and volatility — the 
 same stochastic process that underpins the Black-Scholes framework.
 
-### Geometric Brownian Motion.py
+### Geometric Brownian Motion
 Implements GBM from first principles using the SDE dS = μS dt + σS dW, 
 simulating 1,000-day price trajectories across different volatility 
 regimes to demonstrate how standard deviation governs the distribution 
