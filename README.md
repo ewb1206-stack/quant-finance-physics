@@ -29,7 +29,7 @@ price paths over 252 trading days. Prices a European call option
 via Monte Carlo and verifies against the Black-Scholes analytical 
 solution.
 
-<img src="Updated GBM Simulation.png" width="500"/>
+<img src="Updated GBM Simulation.png" width="400"/>
 
 **Key features:** exact GBM log-normal simulation | Monte Carlo 
 option pricing | Black-Scholes verification | risk-neutral discounting
@@ -51,9 +51,9 @@ pricing.
 **Key features:** call option pricing | drift analysis | profit 
 distribution visualisation | percentile risk metrics
 
-<img src="price_paths.png" width="500"/>
-<img src="profit_distribution.png" width="500"/>
-<img src="final_price_distribution.png" width="500"/>
+<img src="price_paths.png" width="400"/>
+<img src="profit_distribution.png" width="400"/>
+<img src="final_price_distribution.png" width="400"/>
 
 *Results vary between runs by design — stochastic behaviour 
 is the point.*
@@ -72,4 +72,4 @@ visualise the law of large numbers in action.
 **Key features:** convergence analysis | Black-Scholes verification | 
 law of large numbers | exact GBM simulation.
 
-<img src="convergence_plot.png" width="500"/>
+<img src="convergence_plot.png" width="400"/>
