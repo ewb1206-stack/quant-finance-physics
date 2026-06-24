@@ -2,6 +2,8 @@ from scipy.stats import norm
 import numpy as np
 import matplotlib.pyplot as plt
 
+# PARAMETERS #
+
 S0 = 100
 K = 120
 r = 0.03
@@ -14,7 +16,7 @@ d1 = (np.log(S0/K)+(r+0.5*sigma**2)*T)/(sigma*np.sqrt(T))
 d2 = d1 - sigma*np.sqrt(T)
 C = S0 *norm.cdf(d1) - K*np.exp(-r*T)*norm.cdf(d2)
 MC_prices=[]
-path_values = list(range(100,10001,100))
+path_values = list(range(100,50001,100))
 
 for paths in path_values:
 
