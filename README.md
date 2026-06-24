@@ -65,7 +65,7 @@ is the point.*
 Demonstrates the convergence of Monte Carlo option pricing toward the 
 Black-Scholes analytical solution as the number of simulation paths increases.
 
-Simulates a European call option across path counts from 100 to 10,000, 
+Simulates a European call option across path counts from 100 to 50,000, 
 plotting the MC price against the closed-form Black-Scholes price to 
 visualise the law of large numbers in action.
 
