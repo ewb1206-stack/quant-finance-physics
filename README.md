@@ -72,4 +72,4 @@ visualise the law of large numbers in action.
 **Key features:** convergence analysis | Black-Scholes verification | 
 law of large numbers | exact GBM simulation.
 
-<img src="Convergence Plot.png" width="400"/>
+<img src="Convergence Simulation.png" width="400"/>
