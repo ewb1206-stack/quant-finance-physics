@@ -13,7 +13,7 @@ continuous random walk with constant drift and volatility — the
 same stochastic process that underpins the Black-Scholes framework.
 
 ### Volatility Regime Comparison
-Implements GBM from first principles using the SDE dS = μS dt + σS dW, 
+Implements GBM from first principles using the Stochastic Differential Equation (SDE) dS = μS dt + σS dW, 
 simulating 1,000-day price trajectories across different volatility 
 regimes to demonstrate how standard deviation governs the distribution 
 of possible asset outcomes.
