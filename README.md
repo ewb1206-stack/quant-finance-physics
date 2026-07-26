@@ -79,4 +79,4 @@ law of large numbers | exact GBM simulation.
 
 Extends the Monte Carlo pricer to value European put options, then verifies the result against put-call parity, a no-arbitrage relationship that ties call and put prices together without needing a second pricing model. Both prices are computed independently and checked against the parity formula. The gap between them shrinks as path count increases, confirming the simulation converges correctly. The same pricer estimates delta numerically via finite differences, using common random numbers to isolate the effect of spot price from simulation noise. Sweeping delta across a range of spot prices reproduces the S-shaped curve from the Black-Scholes formula, with the risk sensitivity emerging naturally from the simulation rather than being borrowed from BS.
 
-<img src="delta_vs_spot" width="400"/>
+<img src="delta_vs_spot.png" width="400"/>
